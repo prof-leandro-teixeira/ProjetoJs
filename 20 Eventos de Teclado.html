@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Eventos de Teclado</title>
+    
+    <script>
+        function exibir1(){
+            var campo1 = document.getElementById("campo1").value;
+            alert(campo1);
+        }
+
+        function exibir2(){
+            var campo2 = document.getElementById("campo2").value;
+            alert(campo2);
+        }
+
+        function exibir3(){
+            var campo3 = document.getElementById("campo3").value;
+            alert(campo3);
+        }
+
+    </script>
+    
+</head>
+
+<body>
+    <input type="text" id="campo1" onkeyup="exibir1()">
+    <input type="text" id="campo2" onkeyup="exibir2()">
+    <input type="text" id="campo2" onkeyup="exibir3()">
+
+</body>
+
+</html>

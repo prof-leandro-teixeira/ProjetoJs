@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Seletor HTML</title>
+    
+    <script>
+     
+     function acao(){
+        var texto = document.getElementsByTagName("h2")[0];
+        alert(texto.innerHTML);
+     }
+
+    </script>
+</head>
+
+<body>
+
+    <button onclick="acao()">Selecionar</button>
+
+    <h1>Texto do h1</h1>
+    <h2>Novo texto com h2</h2>
+    <h3>Outro texto com h3</h3>
+
+</body>
+
+</html>

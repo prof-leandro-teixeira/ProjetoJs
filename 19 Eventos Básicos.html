@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Eventos Básicos</title>
+    
+    <script>
+
+    function mensagemAcesso(){
+        alert("Seja bem vindo!");
+   }
+        
+   function mensagemButton1(){
+        alert("Botão clicado.");
+   }
+
+   function mensagemEscolha(){
+        var opcoes = document.getElementById("opcoes").value;
+        alert("Opção escolhida: " +opcoes);
+   }
+        
+    </script>
+    
+</head>
+
+<body onload="mensagemAcesso()">
+
+
+    <select onchange="mensagemEscolha()" id="opcoes">
+        <option value="Pilsen">Pilsen</option>
+        <option value="Ipa">Ipa</option>
+        <option value="Pale Ale">Pale Ale</option>
+        <option value="Premium">Premium</option>
+    </select>
+
+    <button onclick="mensagemButton1()">Clique aqui</button>
+
+</body>
+
+</html>
